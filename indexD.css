@@ -1,0 +1,186 @@
+.intro-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #intro-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+body {
+    width: 100%;
+    background-color:black;
+}
+
+p {
+    color: white;
+}
+
+#logo {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+}
+
+#logo img{
+    width: 150px;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topLeft {
+   display: flex;  
+   width: 50%;
+}
+
+#topLeft ul{
+    display:flex;
+    width: 40%;
+    align-items: center;
+    justify-content: auto;
+    list-style: none;
+    gap:1rem;
+    font-size: 20px;
+}
+
+#topLeft a {
+    text-decoration: none;
+    color: white;
+}
+
+#topRight img {
+    border-radius: 5px;
+}
+
+#topRight {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+#topRight a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#topRight ul{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    gap:1rem;
+}
+
+#search {
+    display: flex;
+    height: 1.7rem;
+    justify-content: center;
+}
+
+#notifications {
+    display: flex;
+    height: 1.7rem;
+}
+
+#profilePic {
+    display: flex;
+    height: 3rem;   
+}
+
+#topRight li {
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    display: flex;    
+    float: left;
+    font-size: 20px;
+}
+
+.movies-container {
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 5rem;
+}
+
+.movies-container button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.5rem;
+    background-color: rgba(252, 113, 113, 0.604);
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    max-width: 90%;
+}
+  
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+  
+.carousel img {
+    width: 15rem;
+}
+
+.movie {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-block: 10rem;
+}
+
+.movie img {
+    width: 40rem;
+}
+
+.movie div {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.movie h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.movie p {
+    color: white;
+    margin-top: 2rem;
+}
+
+span {
+    color: white;
+}
+
+.movie .good {
+    color: rgb(98, 255, 98)
+}
+.movie .average {
+    color: rgb(255, 203, 73)
+}
+.movie .bad {
+    color: rgb(255, 91, 91)
+}

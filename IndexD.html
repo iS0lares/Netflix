@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./indexD.css">
+    <link rel="icon" href="./FavIcon.png">
+</head>
+<body class="background">
+    <div class="intro-container">
+        <video id="intro-video" autoplay onended="removerVideo()" >
+          <source src="Netflix New Logo Animation 2019(1080P_HD).mp4" type="video/mp4">
+        </video>
+    </div>
+    <header>
+    <div id="topLeft">
+        <div id="logo">
+            <img src="https://www.caviarcriativo.com/storage/2020/06/Significados-da-Marca-Netflix-1.gif">
+        </div>
+        <ul> 
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Series</a>
+                </li>
+                <li>
+                    <a href="#">Films</a>
+                </li>
+                <li>
+                    <a href="#">Hype</a>
+                </li>
+                <li>
+                    <a href="#">My List</a>
+                </li>
+         </ul>
+    </div>
+    <div id="topRight">
+        <ul>
+        <li>
+            <div id="search">
+                <img src="./loupe.png">
+            </div>
+        </li>
+        <li>
+            <a href="#">Infantil</a>
+        </li>
+        <li>
+            <div id="notifications">
+                <img src="./bell.png">
+            </div>
+        </li>
+        <li>
+            <div id="profilePic">
+                <img src="./profile pic v1.jpg">
+            </div>
+        </li>
+        </ul>
+    </header>
+
+    <section class="movies-container">
+        <button onclick="goLeft()"> &lt; </button>
+        <div class="carousel"></div>
+        <button onclick="goRight()"> &gt; </button>
+    </section>
+    <section class="movie"></section>
+    <script src="./indexD.js"></script>
+</body>
+</html>
